@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubonisrael Akpanudoh</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/238edbb34b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="text-slate-900 transition-all duration-300 scrollbar">
+    <!-- header -->
+    <header
+      class="w-full sticky top-0 left-0 z-10 p-2 sm:p-4 md:p-6 flex items-center justify-between uppercase bg-white drop-shadow-lg"
+    >
+      <!-- logo image -->
+      <div class="w-auto flex items-center md:justify-center gap-2">
+        <div
+          aria-label="logo"
+          class="w-12 h-12 rounded-full text-xl flex items-center justify-center font-bold text-slate-100 bg-slate-900"
+        >
+          UA
+        </div>
+        <p class="text-2xl font-bold uppercase">
+          ubonisrael<span class="hidden lg:inline"> akpanudoh</span>
+        </p>
+      </div>
+      <!-- open menu button -->
+      <button id="open_nav" class="md:hidden">
+        <span class="sr-only">open nav</span>
+        <iconify-icon icon="ep:menu"></iconify-icon>
+      </button>
+      <nav
+        id="nav"
+        class="fixed md:static top-0 left-0 w-0 h-screen z-20 md:w-auto md:h-auto bg-white overflow-hidden transition-all duration-300"
+      >
+        <button
+          id="close_nav"
+          class="absolute top-0 right-0 m-4 z-30 md:hidden"
+        >
+          <span class="sr-only">close nav</span>
+          <iconify-icon icon="ooui:close"></iconify-icon>
+        </button>
+        <ul
+          class="w-full md:w-auto h-full flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-4 lg:gap-6 p-2 mx-auto rounded-lg backdrop-blur-lg md:backdrop-blur-0 ${schoolbell.variable} font-schoolbell"
+        >
+          <!-- navigation links -->
+          <li class="menu_links">
+            <a
+              href="#home"
+              class="w-auto flex items-center justify-center gap-2"
+            >
+              <span class="md:hidden">
+                <iconify-icon icon="material-symbols:home"></iconify-icon>
+              </span>
+              <span
+                class="text-xl lg:text-2xl font-bold border-b-2 border-white hover:border-slate-900"
+              >
+                home
+              </span>
+            </a>
+          </li>
+          <li class="menu_links">
+            <a
+              href="#about"
+              class="w-auto flex items-center justify-center gap-2"
+            >
+              <span class="md:hidden">
+                <iconify-icon icon="octicon:info-16"></iconify-icon>
+              </span>
+              <span
+                class="text-xl lg:text-2xl font-bold border-b-2 border-white hover:border-slate-900"
+              >
+                about
+              </span>
+            </a>
+          </li>
+          <li class="menu_links">
+            <a
+              href="#projects"
+              class="w-auto flex items-center justify-center gap-2"
+            >
+              <span class="md:hidden">
+                <iconify-icon icon="material-symbols:inventory-sharp"></iconify-icon>
+              </span>
+              <span
+                class="text-xl lg:text-2xl font-bold border-b-2 border-white hover:border-slate-900"
+              >
+                projects
+              </span>
+            </a>
+          </li>
+          <li class="menu_links">
+            <a
+              href="#contact"
+              class="w-auto flex items-center justify-center gap-2"
+            >
+              <span class="md:hidden">
+                <iconify-icon icon="tdesign:call-1"></iconify-icon>
+              </span>
+              <span
+                class="text-xl lg:text-2xl font-bold border-b-2 border-white hover:border-slate-900"
+              >
+                contact
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end of header -->
+    <!-- main content of portfolio -->
+    <main class="w-full">
+      <section
+        id="home"
+        class="w-full min-h-screen flex flex-col items-center justify-center sm:gap-1 md:gap-4 px-2 py-16 sm:px-4 lg:px-8 bg-slate-200"
+      >
+        <div>
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold text-center"
+          >
+            <span class="block lg:inline">Hi, </span>
+            <span class="block sm:inline">I&apos;m </span>
+            <span class="block sm:inline">Ubonisrael Akpanudoh</span>
+          </h1>
+        </div>
+        <article class="w-full block max-w-6xl">
+          <p class="px-2 py-4 text-center text-xl sm:text-2xl lg:text-3xl">
+            A frontend developer with a passion for developing functional and
+            aesthetically pleasing websites, and frontend web applications.
+          </p>
+          <div class="w-full flex items-center justify-center gap-4">
+            <a href="https://twitter.com/JAkpanudoh" class="text-3xl md:text-4xl lg:text-5xl">
+              <iconify-icon icon="skill-icons:twitter"></iconify-icon>
+            </a>
+            <a href="https://github.com/ubonisrael" class="text-3xl md:text-4xl lg:text-5xl">
+              <iconify-icon icon="devicon:github"></iconify-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/ubonisrael-akpanudoh" class="text-3xl md:text-4xl lg:text-5xl">
+              <iconify-icon icon="devicon:linkedin"></iconify-icon>
+            </a>
+          </div>
+          <div class="w-full flex items-center justify-center mt-4 sm:mt-8">
+            <a
+              href="#contact"
+              class="p-2 sm:p-4 text-xl md:text-2xl font-bold uppercase text-center text-slate-50 bg-slate-900 hover:bg-yellow-400 rounded-lg"
+            >
+              projects
+            </a>
+          </div>
+        </article>
+      </section>
+      <!-- about section -->
+      <section
+        id="about"
+        class="w-full min-h-screen px-4 py-16 sm:px-6 sm:py-20 lg:px-8 md:py-24 lg:py-28 bg-slate-100"
+      >
+        <!-- section header -->
+        <div class="w-full mb-4 sm:mb-8 md:mb-10">
+          <h2
+            class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
+          >
+            about me
+          </h2>
+          <div
+            class="w-1/3 max-w-[160px] h-1 mx-auto my-1 sm:my-2 md:my-4 bg-slate-950"
+          ></div>
+        </div>
+        <!-- section details -->
+        <section
+          class="w-full md:max-w-5xl mx-auto pt-4 sm:pt-6 md:pt-8 lg:pt-12 grid lg:grid-cols-[60%_40%] gap-4 sm:gap-6 lg:gap-0"
+        >
+          <article
+            class="w-full grid gap-2 sm:gap-4 md:gap-6 text-center md:text-left sm:text-xl"
+          >
+            <h3
+              class="w-full text-xl sm:text-2xl md:text-3xl uppercase font-bold"
+            >
+              Get to know me!
+            </h3>
+            <p>
+              I am a self taught software developer with a high capacity for
+              problem solving and analytical thinking. I love building
+              responsive, user-friendly and interactive web interfaces with
+              seamless navigation using modern technologies.
+            </p>
+            <p>
+              I hope to hone my skills, deepen my knowlege and create or
+              contribute to projects that will positively impact the lives of
+              people around the world.
+            </p>
+            <p>
+              I love to play basketball, watch soccer, movies and documentaries,
+              have fun and meet new people during my leisure time.
+            </p>
+            <p>
+              I am open to collaborations, exciting projects and job
+              opportunities, always looking forward to connecting with fellow
+              hackers and tech enthusiasts. So, if you have a good opportunity
+              that matches my skillset, do not hesitate to contact me.
+            </p>
+            <div class="w-full flex items-center justify-center md:justify-normal my-4 sm:my-8">
+              <a
+                href="#contact"
+                class="p-2 sm:p-4 text-lg md:text-xl font-bold capitalize text-center text-slate-50 bg-slate-900 hover:bg-yellow-400 rounded-lg"
+              >
+                Let&apos;s connect
+              </a>
+            </div>
+          </article>
+          <section class="w-full self-baseline flex flex-col gap-2 md:gap-4">
+            <h3
+              class="w-full text-xl sm:text-2xl md:text-3xl uppercase text-center md:text-left lg:text-right font-bold"
+            >
+              my skills
+            </h3>
+            <ul
+              class="w-full flex flex-wrap items-center justify-center md:justify-normal lg:justify-end gap-4 sm:gap-8 md:gap-12 py-2 text-3xl sm:text-5xl md:text-7xl uppercase"
+            >
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="vscode-icons:file-type-html"></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">html</span> -->
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">css</span> -->
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">sass</span> -->
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="devicon:tailwindcss"></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">tailwindcss</span> -->
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="logos:javascript"></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">javascript</span> -->
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon
+                  icon="vscode-icons:file-type-typescriptdef-official"
+                ></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">typescript</span> -->
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="devicon:react"></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">react</span> -->
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="teenyicons:nextjs-outline"></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">next</span> -->
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="devicon:git"></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">git</span> -->
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="devicon:github"></iconify-icon>
+                <!-- <span class="text-lg sm:text-xl lg:2xl">github</span> -->
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+      <section
+        id="projects"
+        class="w-full px-4 py-16 sm:px-8 sm:py-20 md:py-24 md:px-12 lg:px-16 lg:py-28 bg-slate-200"
+      >
+        <div class="w-full mb-4 sm:mb-8 md:mb-10">
+          <h2
+            class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
+          >
+            my projects
+          </h2>
+          <div
+            class="w-1/3 max-w-[160px] h-1 mx-auto my-1 sm:my-2 md:my-4 bg-slate-950"
+          ></div>
+        </div>
+        <ul
+          id="projects_list"
+          class="w-full grid md:grid-cols-2 gap-4 sm:gap-8 lg:gap-12 pt-4 sm:pt-6 md:pt-8 lg:pt-12"
+        ></ul>
+      </section>
+      <section
+        id="contact"
+        class="w-full min-h-screen flex flex-col items-center gap-2 px-4 py-16 sm:px-8 sm:py-20 md:py-24 md:px-12 lg:px-16 lg:py-28 bg-slate-100"
+      >
+        <div class="w-full mb-4 sm:mb-8 md:mb-10">
+          <h2
+            class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
+          >
+            let's connect
+          </h2>
+          <div
+            class="w-1/3 max-w-[160px] h-1 mx-auto my-1 sm:my-2 md:my-4 bg-slate-950"
+          ></div>
+        </div>
+        <section
+          class="w-full flex items-center justify-center pt-4 sm:pt-6 md:pt-8 lg:pt-12"
+        >
+          <form
+            action=""
+            class="w-full max-w-xs md:max-w-3xl flex flex-col gap-2 md:gap-4 p-6 md:p-10 text-xl md:text-2xl bg-white rounded-xl drop-shadow md:drop-shadow-lg"
+          >
+            <label htmlFor="name" class="w-full grid gap-1">
+              Name
+              <input
+                type="text"
+                name="name"
+                placeholder="e.g John Doe"
+                class="w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+              />
+            </label>
+            <label htmlFor="Email" class="w-full grid gap-1">
+              Email
+              <input
+                type="text"
+                name="Email"
+                placeholder="johndoe@example.com"
+                class="w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+              />
+            </label>
+            <label htmlFor="message" class="w-full grid gap-1">
+              Message
+              <textarea
+                name="message"
+                placeholder="Please enter you message here..."
+                class="w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+                rows="7"
+              ></textarea>
+            </label>
+            <button
+              class="w-auto self-end flex items-center justify-center gap-1 md:gap-2 py-2 px-4 text-white bg-slate-900 hover:bg-slate-500 rounded-lg"
+            >
+              Send Message <iconify-icon icon="tabler:send"></iconify-icon>
+            </button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

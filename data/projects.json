@@ -1,0 +1,64 @@
+[
+    {
+        "name": "flexmovies",
+        "project_image": "flexmovies.png",
+        "description": "An entertainment web app built with Next.js that allows users to search for movies and tv shows. Users can also sign up and add movies or shows to their lists of favorites or a watchlist.",
+        "tech_stack": [
+            "sass",
+            "javascript",
+            "react",
+            "nextjs",
+            "firebase",
+            "api"
+        ],
+        "links": [
+            "https://github.com/ubonisrael/flexmovies",
+            "https://flexmovies.vercel.app"
+        ]
+    },
+    {
+        "name": "flexmart",
+        "project_image": "flexmart.png",
+        "description": "An ecommerce web app built using NextJS.",
+        "tech_stack": [
+            "tailwind",
+            "typescript",
+            "react",
+            "nextjs"
+        ],
+        "links": [
+            "https://github.com/ubonisrael/flexmart",
+            "https://flexmart.vercel.app"
+        ]
+    },
+    {
+        "name": "contact manager",
+        "project_image": "cmanager.png",
+        "description": "A CRUD web app built with ReactJS that allows users to add, edit, store and delete contacts.",
+        "tech_stack": [
+            "tailwind",
+            "typescript",
+            "react",
+            "reactrouter",
+            "firebase"
+        ],
+        "links": [
+            "https://github.com/ubonisrael/CMreactrouter",
+            "https://c-mreactrouter.vercel.app"
+        ]
+    },
+    {
+        "name": "space website",
+        "project_image": "space_website.png",
+        "description": "A multi-page space tourism website built with HTML, CSS and vanilla Javascript.",
+        "tech_stack": [
+            "html",
+            "css",
+            "javascript"
+        ],
+        "links": [
+            "https://github.com/ubonisrael/space-website",
+            "https://space-website-five.vercel.app"
+        ]
+    }
+]
