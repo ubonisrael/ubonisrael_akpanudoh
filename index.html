@@ -6,13 +6,13 @@
     <title>Ubonisrael Akpanudoh</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script
-      src="https://kit.fontawesome.com/238edbb34b.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="http://anijs.github.io/lib/anicollection/anicollection.css"
+    />
   </head>
   <body class="text-slate-900 transition-all duration-300 scrollbar">
     <!-- header -->
@@ -87,7 +87,9 @@
               class="w-auto flex items-center justify-center gap-2"
             >
               <span class="md:hidden">
-                <iconify-icon icon="material-symbols:inventory-sharp"></iconify-icon>
+                <iconify-icon
+                  icon="material-symbols:inventory-sharp"
+                ></iconify-icon>
               </span>
               <span
                 class="text-xl lg:text-2xl font-bold border-b-2 border-white hover:border-slate-900"
@@ -121,28 +123,45 @@
         id="home"
         class="w-full min-h-screen flex flex-col items-center justify-center sm:gap-1 md:gap-4 px-2 py-16 sm:px-4 lg:px-8 bg-slate-200"
       >
-        <div>
+        <div class="welcome_text-strings">
           <h1
             class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold text-center"
+            data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal"
           >
             <span class="block lg:inline">Hi, </span>
             <span class="block sm:inline">I&apos;m </span>
             <span class="block sm:inline">Ubonisrael Akpanudoh</span>
           </h1>
         </div>
+        <span class="welcome_text"></span>
         <article class="w-full block max-w-6xl">
-          <p class="px-2 py-4 text-center text-xl sm:text-2xl lg:text-3xl">
+          <p
+            class="px-2 py-4 text-center text-xl sm:text-2xl lg:text-3xl"
+            data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"
+          >
             A frontend developer with a passion for developing functional and
             aesthetically pleasing websites, and frontend web applications.
           </p>
           <div class="w-full flex items-center justify-center gap-4">
-            <a href="https://twitter.com/JAkpanudoh" class="text-3xl md:text-4xl lg:text-5xl">
+            <a
+              href="https://twitter.com/JAkpanudoh"
+              class="text-3xl md:text-4xl lg:text-5xl"
+              data-anijs="if: scroll, on: window, do: rollIn animated, before: scrollReveal"
+            >
               <iconify-icon icon="skill-icons:twitter"></iconify-icon>
             </a>
-            <a href="https://github.com/ubonisrael" class="text-3xl md:text-4xl lg:text-5xl">
+            <a
+              href="https://github.com/ubonisrael"
+              class="text-3xl md:text-4xl lg:text-5xl"
+              data-anijs="if: scroll, on: window, do: flip animated, before: scrollReveal"
+            >
               <iconify-icon icon="devicon:github"></iconify-icon>
             </a>
-            <a href="https://www.linkedin.com/in/ubonisrael-akpanudoh" class="text-3xl md:text-4xl lg:text-5xl">
+            <a
+              href="https://www.linkedin.com/in/ubonisrael-akpanudoh"
+              class="text-3xl md:text-4xl lg:text-5xl"
+              data-anijs="if: scroll, on: window, do: slideInRight animated, before: scrollReveal"
+            >
               <iconify-icon icon="devicon:linkedin"></iconify-icon>
             </a>
           </div>
@@ -165,6 +184,7 @@
         <div class="w-full mb-4 sm:mb-8 md:mb-10">
           <h2
             class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
+            data-anijs="if: scroll, on: window, do: fadeInUpBig animated, before: scrollReveal"
           >
             about me
           </h2>
@@ -178,6 +198,7 @@
         >
           <article
             class="w-full grid gap-2 sm:gap-4 md:gap-6 text-center md:text-left sm:text-xl"
+            data-anijs="if: scroll, on: window, do: animate__backInUp animated, before: scrollReveal"
           >
             <h3
               class="w-full text-xl sm:text-2xl md:text-3xl uppercase font-bold"
@@ -205,7 +226,9 @@
               hackers and tech enthusiasts. So, if you have a good opportunity
               that matches my skillset, do not hesitate to contact me.
             </p>
-            <div class="w-full flex items-center justify-center md:justify-normal my-4 sm:my-8">
+            <div
+              class="w-full flex items-center justify-center md:justify-normal my-4 sm:my-8"
+            >
               <a
                 href="#contact"
                 class="p-2 sm:p-4 text-lg md:text-xl font-bold capitalize text-center text-slate-50 bg-slate-900 hover:bg-yellow-400 rounded-lg"
@@ -217,51 +240,82 @@
           <section class="w-full self-baseline flex flex-col gap-2 md:gap-4">
             <h3
               class="w-full text-xl sm:text-2xl md:text-3xl uppercase text-center md:text-left lg:text-right font-bold"
+              data-anijs="if: scroll, on: window, do: fadeInRightBig animated, before: scrollReveal"
             >
               my skills
             </h3>
             <ul
               class="w-full flex flex-wrap items-center justify-center md:justify-normal lg:justify-end gap-4 sm:gap-8 md:gap-12 py-2 text-3xl sm:text-5xl md:text-7xl uppercase"
             >
-              <li class="flex flex-col items-center justify-center gap-1">
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
                 <iconify-icon icon="vscode-icons:file-type-html"></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">html</span> -->
               </li>
-              <li class="flex flex-col items-center justify-center gap-1">
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
                 <iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">css</span> -->
               </li>
-              <li class="flex flex-col items-center justify-center gap-1">
-                <iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
+                <iconify-icon icon="devicon:sass"></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">sass</span> -->
               </li>
-              <li class="flex flex-col items-center justify-center gap-1">
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
                 <iconify-icon icon="devicon:tailwindcss"></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">tailwindcss</span> -->
               </li>
-              <li class="flex flex-col items-center justify-center gap-1">
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
                 <iconify-icon icon="logos:javascript"></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">javascript</span> -->
               </li>
-              <li class="flex flex-col items-center justify-center gap-1">
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
                 <iconify-icon
                   icon="vscode-icons:file-type-typescriptdef-official"
                 ></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">typescript</span> -->
               </li>
-              <li class="flex flex-col items-center justify-center gap-1">
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
                 <iconify-icon icon="devicon:react"></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">react</span> -->
               </li>
-              <li class="flex flex-col items-center justify-center gap-1">
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
                 <iconify-icon icon="teenyicons:nextjs-outline"></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">next</span> -->
               </li>
-              <li class="flex flex-col items-center justify-center gap-1">
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
                 <iconify-icon icon="devicon:git"></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">git</span> -->
               </li>
-              <li class="flex flex-col items-center justify-center gap-1">
+              <li
+                class="flex flex-col items-center justify-center gap-1"
+                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
+              >
                 <iconify-icon icon="devicon:github"></iconify-icon>
                 <!-- <span class="text-lg sm:text-xl lg:2xl">github</span> -->
               </li>
@@ -276,6 +330,7 @@
         <div class="w-full mb-4 sm:mb-8 md:mb-10">
           <h2
             class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
+            data-anijs="if: scroll, on: window, do: fadeInUpBig animated, before: scrollReveal"
           >
             my projects
           </h2>
@@ -286,7 +341,24 @@
         <ul
           id="projects_list"
           class="w-full grid md:grid-cols-2 gap-4 sm:gap-8 lg:gap-12 pt-4 sm:pt-6 md:pt-8 lg:pt-12"
-        ></ul>
+        >
+          <li
+            class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
+            data-anijs="if: scroll, on: window, do: rotateIn animated, before: scrollReveal"
+          ></li>
+          <li
+            class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
+            data-anijs="if: scroll, on: window, do: bounceInRight animated, before: scrollReveal"
+          ></li>
+          <li
+            class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
+            data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal"
+          ></li>
+          <li
+            class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
+            data-anijs="if: scroll, on: window, do: flipInX animated, before: scrollReveal"
+          ></li>
+        </ul>
       </section>
       <section
         id="contact"
@@ -295,6 +367,7 @@
         <div class="w-full mb-4 sm:mb-8 md:mb-10">
           <h2
             class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
+            data-anijs="if: scroll, on: window, do: fadeInUpBig animated, before: scrollReveal"
           >
             let's connect
           </h2>
@@ -306,37 +379,52 @@
           class="w-full flex items-center justify-center pt-4 sm:pt-6 md:pt-8 lg:pt-12"
         >
           <form
-            action=""
+            name="contact_form"
+            novalidate
+            method="post"
+            action="contactform.php"
             class="w-full max-w-xs md:max-w-3xl flex flex-col gap-2 md:gap-4 p-6 md:p-10 text-xl md:text-2xl bg-white rounded-xl drop-shadow md:drop-shadow-lg"
+            data-anijs="if: scroll, on: window, do: flipInY animated, before: scrollReveal"
           >
             <label htmlFor="name" class="w-full grid gap-1">
               Name
+              <span class="name_error text-xs text-red-500"></span>
               <input
                 type="text"
                 name="name"
+                required
+                type="text"
                 placeholder="e.g John Doe"
-                class="w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+                class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
               />
             </label>
             <label htmlFor="Email" class="w-full grid gap-1">
               Email
+              <span class="email_error text-xs text-red-500"></span>
               <input
                 type="text"
-                name="Email"
+                name="email"
+                required
+                type="text"
                 placeholder="johndoe@example.com"
-                class="w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+                class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
               />
             </label>
             <label htmlFor="message" class="w-full grid gap-1">
               Message
+              <span class="message_error text-xs text-red-500"></span>
               <textarea
                 name="message"
+                required
+                type="text"
                 placeholder="Please enter you message here..."
-                class="w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+                class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
                 rows="7"
               ></textarea>
             </label>
             <button
+              type="submit"
+              onclick="return ValidationForm()"
               class="w-auto self-end flex items-center justify-center gap-1 md:gap-2 py-2 px-4 text-white bg-slate-900 hover:bg-slate-500 rounded-lg"
             >
               Send Message <iconify-icon icon="tabler:send"></iconify-icon>
@@ -345,6 +433,12 @@
         </section>
       </section>
     </main>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+
+    <!-- Include to use $addClass, $toggleClass or $removeClass -->
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+    <!-- The scrollreveal helper -->
+    <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="./app.js"></script>
   </body>
