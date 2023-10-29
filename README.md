@@ -13,4 +13,4 @@ It contains four sections:
 Animations were implemented with the help of [AniJS](https://anijs.github.io) and [animate.style](https://animate.style), in case you are wwondering😊
 
 ## Here's a link the live site
-[Ubonisrael Akpanudoh]()
+[Ubonisrael Akpanudoh](https://ubonisrael-akpanudoh.vercel.app/)
