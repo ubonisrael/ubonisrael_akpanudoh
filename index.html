@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Let's work together">
     <title>Ubonisrael Akpanudoh</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <link
@@ -11,11 +12,16 @@
     />
     <link
       rel="stylesheet"
-      href="http://anijs.github.io/lib/anicollection/anicollection.css"
+      href="https://anijs.github.io/lib/anicollection/anicollection.css"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body class="text-slate-900 transition-all duration-300 scrollbar">
     <!-- header -->
+    <a href="#home" class="sr-only" aria-label="Skip to main">Skip to main</a>
     <header
       class="w-full sticky top-0 left-0 z-10 p-2 sm:p-4 md:p-6 flex items-center justify-between uppercase bg-white drop-shadow-lg"
     >
@@ -55,6 +61,7 @@
             <a
               href="#home"
               class="w-auto flex items-center justify-center gap-2"
+              aria-label="jump to home section"
             >
               <span class="md:hidden">
                 <iconify-icon icon="material-symbols:home"></iconify-icon>
@@ -70,6 +77,7 @@
             <a
               href="#about"
               class="w-auto flex items-center justify-center gap-2"
+              aria-label="jump to about section"
             >
               <span class="md:hidden">
                 <iconify-icon icon="octicon:info-16"></iconify-icon>
@@ -85,6 +93,7 @@
             <a
               href="#projects"
               class="w-auto flex items-center justify-center gap-2"
+              aria-label="jump to projects section"
             >
               <span class="md:hidden">
                 <iconify-icon
@@ -102,6 +111,7 @@
             <a
               href="#contact"
               class="w-auto flex items-center justify-center gap-2"
+              aria-label="jump to contact section"
             >
               <span class="md:hidden">
                 <iconify-icon icon="tdesign:call-1"></iconify-icon>
@@ -114,6 +124,7 @@
             </a>
           </li>
         </ul>
+        <!-- end of navigation links -->
       </nav>
     </header>
     <!-- end of header -->
@@ -123,6 +134,7 @@
         id="home"
         class="w-full min-h-screen flex flex-col items-center justify-center sm:gap-1 md:gap-4 px-2 py-16 sm:px-4 lg:px-8 bg-slate-200"
       >
+      <!-- welcome text -->
         <div class="welcome_text-strings">
           <h1
             class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold text-center"
@@ -145,30 +157,38 @@
           <div class="w-full flex items-center justify-center gap-4">
             <a
               href="https://twitter.com/JAkpanudoh"
+              target="_blank"
               class="text-3xl md:text-4xl lg:text-5xl"
+              aria-label="Link to twitter page"
               data-anijs="if: scroll, on: window, do: rollIn animated, before: scrollReveal"
             >
               <iconify-icon icon="skill-icons:twitter"></iconify-icon>
             </a>
             <a
               href="https://github.com/ubonisrael"
+              target="_blank"
               class="text-3xl md:text-4xl lg:text-5xl"
+              aria-label="Link to github page"
               data-anijs="if: scroll, on: window, do: flip animated, before: scrollReveal"
             >
               <iconify-icon icon="devicon:github"></iconify-icon>
             </a>
             <a
               href="https://www.linkedin.com/in/ubonisrael-akpanudoh"
+              target="_blank"
               class="text-3xl md:text-4xl lg:text-5xl"
+              aria-label="Link to linkedin page"
               data-anijs="if: scroll, on: window, do: slideInRight animated, before: scrollReveal"
             >
               <iconify-icon icon="devicon:linkedin"></iconify-icon>
             </a>
           </div>
           <div class="w-full flex items-center justify-center mt-4 sm:mt-8">
+            <!-- link to projects -->
             <a
-              href="#contact"
+              href="#projects"
               class="p-2 sm:p-4 text-xl md:text-2xl font-bold uppercase text-center text-slate-50 bg-slate-900 hover:bg-yellow-400 rounded-lg"
+              aria-label="jump to projects section"
             >
               projects
             </a>
@@ -232,11 +252,13 @@
               <a
                 href="#contact"
                 class="p-2 sm:p-4 text-lg md:text-xl font-bold capitalize text-center text-slate-50 bg-slate-900 hover:bg-yellow-400 rounded-lg"
+                aria-label="jump to contact section"
               >
                 Let&apos;s connect
               </a>
             </div>
           </article>
+          <!-- skills section -->
           <section class="w-full self-baseline flex flex-col gap-2 md:gap-4">
             <h3
               class="w-full text-xl sm:text-2xl md:text-3xl uppercase text-center md:text-left lg:text-right font-bold"
@@ -244,6 +266,7 @@
             >
               my skills
             </h3>
+            <!-- list of skills -->
             <ul
               class="w-full flex flex-wrap items-center justify-center md:justify-normal lg:justify-end gap-4 sm:gap-8 md:gap-12 py-2 text-3xl sm:text-5xl md:text-7xl uppercase"
             >
@@ -252,35 +275,30 @@
                 data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
               >
                 <iconify-icon icon="vscode-icons:file-type-html"></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">html</span> -->
               </li>
               <li
                 class="flex flex-col items-center justify-center gap-1"
                 data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
               >
                 <iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">css</span> -->
               </li>
               <li
                 class="flex flex-col items-center justify-center gap-1"
                 data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
               >
                 <iconify-icon icon="devicon:sass"></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">sass</span> -->
               </li>
               <li
                 class="flex flex-col items-center justify-center gap-1"
                 data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
               >
                 <iconify-icon icon="devicon:tailwindcss"></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">tailwindcss</span> -->
               </li>
               <li
                 class="flex flex-col items-center justify-center gap-1"
                 data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
               >
                 <iconify-icon icon="logos:javascript"></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">javascript</span> -->
               </li>
               <li
                 class="flex flex-col items-center justify-center gap-1"
@@ -289,44 +307,42 @@
                 <iconify-icon
                   icon="vscode-icons:file-type-typescriptdef-official"
                 ></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">typescript</span> -->
               </li>
               <li
                 class="flex flex-col items-center justify-center gap-1"
                 data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
               >
                 <iconify-icon icon="devicon:react"></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">react</span> -->
               </li>
               <li
                 class="flex flex-col items-center justify-center gap-1"
                 data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
               >
                 <iconify-icon icon="teenyicons:nextjs-outline"></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">next</span> -->
               </li>
               <li
                 class="flex flex-col items-center justify-center gap-1"
                 data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
               >
                 <iconify-icon icon="devicon:git"></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">git</span> -->
               </li>
               <li
                 class="flex flex-col items-center justify-center gap-1"
                 data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
               >
                 <iconify-icon icon="devicon:github"></iconify-icon>
-                <!-- <span class="text-lg sm:text-xl lg:2xl">github</span> -->
               </li>
             </ul>
           </section>
         </section>
       </section>
+      <!-- end of about section -->
+      <!-- projects section -->
       <section
         id="projects"
         class="w-full px-4 py-16 sm:px-8 sm:py-20 md:py-24 md:px-12 lg:px-16 lg:py-28 bg-slate-200"
       >
+      <!-- section header -->
         <div class="w-full mb-4 sm:mb-8 md:mb-10">
           <h2
             class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
@@ -338,6 +354,7 @@
             class="w-1/3 max-w-[160px] h-1 mx-auto my-1 sm:my-2 md:my-4 bg-slate-950"
           ></div>
         </div>
+        <!-- list of projects -->
         <ul
           id="projects_list"
           class="w-full grid md:grid-cols-2 gap-4 sm:gap-8 lg:gap-12 pt-4 sm:pt-6 md:pt-8 lg:pt-12"
@@ -360,10 +377,12 @@
           ></li>
         </ul>
       </section>
+      <!-- end of projects section -->
       <section
         id="contact"
         class="w-full min-h-screen flex flex-col items-center gap-2 px-4 py-16 sm:px-8 sm:py-20 md:py-24 md:px-12 lg:px-16 lg:py-28 bg-slate-100"
       >
+      <!-- section header -->
         <div class="w-full mb-4 sm:mb-8 md:mb-10">
           <h2
             class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
@@ -378,11 +397,11 @@
         <section
           class="w-full flex items-center justify-center pt-4 sm:pt-6 md:pt-8 lg:pt-12"
         >
+        <!-- contact form -->
           <form
+            id="contact-form"
             name="contact_form"
             novalidate
-            method="post"
-            action="contactform.php"
             class="w-full max-w-xs md:max-w-3xl flex flex-col gap-2 md:gap-4 p-6 md:p-10 text-xl md:text-2xl bg-white rounded-xl drop-shadow md:drop-shadow-lg"
             data-anijs="if: scroll, on: window, do: flipInY animated, before: scrollReveal"
           >
@@ -391,22 +410,34 @@
               <span class="name_error text-xs text-red-500"></span>
               <input
                 type="text"
-                name="name"
+                name="user_name"
                 required
                 type="text"
                 placeholder="e.g John Doe"
                 class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
               />
             </label>
-            <label htmlFor="Email" class="w-full grid gap-1">
+            <label htmlFor="email" class="w-full grid gap-1">
               Email
               <span class="email_error text-xs text-red-500"></span>
               <input
                 type="text"
-                name="email"
+                name="user_email"
                 required
                 type="text"
                 placeholder="johndoe@example.com"
+                class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+              />
+            </label>
+            <label htmlFor="subject" class="w-full grid gap-1">
+              Subject
+              <span class="subject_error text-xs text-red-500"></span>
+              <input
+                type="text"
+                name="subject"
+                required
+                type="text"
+                placeholder="Let's work on a project"
                 class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
               />
             </label>
@@ -424,8 +455,7 @@
             </label>
             <button
               type="submit"
-              onclick="return ValidationForm()"
-              class="w-auto self-end flex items-center justify-center gap-1 md:gap-2 py-2 px-4 text-white bg-slate-900 hover:bg-slate-500 rounded-lg"
+              class="submit_btn w-auto self-end flex items-center justify-center gap-1 md:gap-2 py-2 px-4 text-white bg-slate-900 hover:bg-slate-500 rounded-lg"
             >
               Send Message <iconify-icon icon="tabler:send"></iconify-icon>
             </button>
@@ -433,13 +463,63 @@
         </section>
       </section>
     </main>
+    <!-- end of main -->
+    <!-- footer -->
+    <footer class="w-full bg-slate-900 text-slate-100 font-bold">
+      <p class="w-full text-center capitalize py-4">
+        made with ❤️ by
+        <a href="https://github.com/ubonisrael" target="_blank" aria-label="link to Ubonisrael's github"
+          >Ubonisrael Akpanudoh</a
+        >
+      </p>
+    </footer>
     <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
 
     <!-- Include to use $addClass, $toggleClass or $removeClass -->
-    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+    <!-- <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script> -->
     <!-- The scrollreveal helper -->
     <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="./app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("SRqKE5iiydW24NjAc");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            if (ValidationForm()) {
+              submitBtn.innerHTML = `<iconify-icon icon="line-md:loading-twotone-loop"></iconify-icon>`;
+              submitBtn.setAttribute("disabled", true);
+              // these IDs from the previous steps
+              emailjs.sendForm("contact_service", "contact_form", this).then(
+                function () {
+                  submitBtn.innerHTML = `Sent <iconify-icon icon="mdi:tick-circle-outline"></iconify-icon>`;
+                  setTimeout(function () {
+                    submitBtn.innerHTML = `Send Message <iconify-icon icon="tabler:send"></iconify-icon>`;
+                    submitBtn.removeAttribute("disabled");
+                  }, 3500);
+                  console.log("SUCCESS!");
+                },
+                function (error) {
+                  console.log("FAILED...", error);
+                  alert(error);
+                  submitBtn.innerHTML = `Send Message <iconify-icon icon="tabler:send"></iconify-icon>`;
+                  submitBtn.removeAttribute("disabled");
+                }
+              );
+            }
+          });
+      };
+    </script>
   </body>
 </html>

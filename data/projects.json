@@ -1,7 +1,7 @@
 [
     {
         "name": "flexmovies",
-        "project_image": "flexmovies.png",
+        "project_image": "flexmovies.webp",
         "description": "An entertainment web app built with Next.js that allows users to search for movies and tv shows. Users can also sign up and add movies or shows to their lists of favorites or a watchlist.",
         "tech_stack": [
             "sass",
@@ -18,7 +18,7 @@
     },
     {
         "name": "flexmart",
-        "project_image": "flexmart.png",
+        "project_image": "flexmart.webp",
         "description": "An ecommerce web app built using NextJS.",
         "tech_stack": [
             "tailwind",
@@ -33,7 +33,7 @@
     },
     {
         "name": "contact manager",
-        "project_image": "cmanager.png",
+        "project_image": "cmanager.webp",
         "description": "A CRUD web app built with ReactJS that allows users to add, edit, store and delete contacts.",
         "tech_stack": [
             "tailwind",
@@ -49,7 +49,7 @@
     },
     {
         "name": "space website",
-        "project_image": "space_website.png",
+        "project_image": "space_website.webp",
         "description": "A multi-page space tourism website built with HTML, CSS and vanilla Javascript.",
         "tech_stack": [
             "html",
