@@ -47,9 +47,9 @@ function loadProjects() {
     .then((res) =>
       res.map((data, i) => {
         projectsList[i].innerHTML = `<div class="w-full">
-        <img src="./data/images/${data.project_image}" alt={${
+        <img src="./data/images/${data.project_image}" alt="${
           data.name
-        } image} />
+        } image" />
         <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl py-1 sm:py-4 lg:py-6 uppercase font-bold">
           ${data.name}
         </h3>

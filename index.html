@@ -357,11 +357,11 @@
         <!-- list of projects -->
         <ul
           id="projects_list"
-          class="w-full grid md:grid-cols-2 gap-4 sm:gap-8 lg:gap-12 pt-4 sm:pt-6 md:pt-8 lg:pt-12"
+          class="w-full grid md:grid-cols-2 gap-4 sm:gap-8 lg:gap-12 p-4 sm:p-6 md:p-8 lg:p-12"
         >
           <li
             class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
-            data-anijs="if: scroll, on: window, do: rotateIn animated, before: scrollReveal"
+            data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal"
           ></li>
           <li
             class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
@@ -373,7 +373,11 @@
           ></li>
           <li
             class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
-            data-anijs="if: scroll, on: window, do: flipInX animated, before: scrollReveal"
+            data-anijs="if: scroll, on: window, do: bounceInRight animated, before: scrollReveal"
+          ></li>
+          <li
+            class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
+            data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal"
           ></li>
         </ul>
       </section>

@@ -48,6 +48,20 @@
         ]
     },
     {
+        "name": "CountriesDB",
+        "project_image": "cdb.png",
+        "description": "A web app where users can look up and search for countries and their inforamtion. A frontend mentor challenge.",
+        "tech_stack": [
+            "javascript",
+            "nextjs",
+            "api"
+        ],
+        "links": [
+            "https://github.com/ubonisrael/restapi",
+            "https://restapi-xi.vercel.app/"
+        ]
+    },
+    {
         "name": "space website",
         "project_image": "space_website.webp",
         "description": "A multi-page space tourism website built with HTML, CSS and vanilla Javascript.",
