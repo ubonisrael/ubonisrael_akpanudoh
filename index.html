@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Let's work together">
+    <meta name="description" content="Let's work together" />
     <title>Ubonisrael Akpanudoh</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://anijs.github.io/lib/anicollection/anicollection.css"
     />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -23,7 +19,7 @@
     <!-- header -->
     <a href="#home" class="sr-only" aria-label="Skip to main">Skip to main</a>
     <header
-      class="w-full sticky top-0 left-0 z-10 p-2 sm:p-4 md:p-6 flex items-center justify-between uppercase bg-white drop-shadow-lg"
+      class="w-full sticky backdrop-blur-sm top-0 left-0 z-10 p-2 md:p-4 xl:p-6 flex items-center justify-between uppercase drop-shadow-lg"
     >
       <!-- logo image -->
       <div class="w-auto flex items-center md:justify-center gap-2">
@@ -44,7 +40,7 @@
       </button>
       <nav
         id="nav"
-        class="fixed md:static top-0 left-0 w-0 h-screen z-20 md:w-auto md:h-auto bg-white overflow-hidden transition-all duration-300"
+        class="fixed md:static top-0 left-0 w-0 h-screen z-20 md:w-auto md:h-auto overflow-hidden transition-all duration-300"
       >
         <button
           id="close_nav"
@@ -91,6 +87,23 @@
           </li>
           <li class="menu_links">
             <a
+            target="_blank"
+              href="https://drive.google.com/file/d/1uKubXEzO9vBrcFzF2sSVdXmY0zTnsase/view?usp=sharing"
+              class="w-auto flex items-center justify-center gap-2"
+              aria-label="download resume"
+            >
+              <span class="md:hidden">
+                <iconify-icon icon="pepicons-pop:cv"></iconify-icon>
+              </span>
+              <span
+                class="text-xl lg:text-2xl font-bold border-b-2 border-white hover:border-slate-900"
+              >
+                resume
+              </span>
+            </a>
+          </li>
+          <li class="menu_links">
+            <a
               href="#projects"
               class="w-auto flex items-center justify-center gap-2"
               aria-label="jump to projects section"
@@ -132,13 +145,12 @@
     <main class="w-full">
       <section
         id="home"
-        class="w-full min-h-screen flex flex-col items-center justify-center sm:gap-1 md:gap-4 px-2 py-16 sm:px-4 lg:px-8 bg-slate-200"
+        class="w-full h-[calc(100vh-64px)] md:h-[calc(100vh-80px)] xl:h-[calc(100vh-98px)] flex flex-col items-center justify-center sm:gap-1 md:gap-4 px-2 py-16 sm:px-4 lg:px-8 bg-slate-200"
       >
-      <!-- welcome text -->
+        <!-- welcome text -->
         <div class="welcome_text-strings">
           <h1
             class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase font-bold text-center"
-            data-anijs="if: scroll, on: window, do: fadeInDown animated, before: scrollReveal"
           >
             <span class="block lg:inline">Hi, </span>
             <span class="block sm:inline">I&apos;m </span>
@@ -146,51 +158,45 @@
           </h1>
         </div>
         <span class="welcome_text"></span>
-        <article class="w-full block max-w-6xl">
-          <p
-            class="px-2 py-4 text-center text-xl sm:text-2xl lg:text-3xl"
-            data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal"
-          >
-            A frontend developer with a passion for developing functional and
-            aesthetically pleasing websites, and frontend web applications.
+        <article class="w-full block max-w-xl mx-auto">
+          <p class="px-2 py-4 text-center text-lg md:text-xl font-medium">
+            Fullstack developer with 2+ years of experience designing and
+            implementing scalable web applications.
           </p>
           <div class="w-full flex items-center justify-center gap-4">
             <a
               href="https://twitter.com/JAkpanudoh"
               target="_blank"
-              class="text-3xl md:text-4xl lg:text-5xl"
+              class="text-xl md:text-3xl"
               aria-label="Link to twitter page"
-              data-anijs="if: scroll, on: window, do: rollIn animated, before: scrollReveal"
             >
               <iconify-icon icon="skill-icons:twitter"></iconify-icon>
             </a>
             <a
               href="https://github.com/ubonisrael"
               target="_blank"
-              class="text-3xl md:text-4xl lg:text-5xl"
+              class="text-xl md:text-3xl"
               aria-label="Link to github page"
-              data-anijs="if: scroll, on: window, do: flip animated, before: scrollReveal"
             >
               <iconify-icon icon="devicon:github"></iconify-icon>
             </a>
             <a
               href="https://www.linkedin.com/in/ubonisrael-akpanudoh"
               target="_blank"
-              class="text-3xl md:text-4xl lg:text-5xl"
+              class="text-xl md:text-3xl"
               aria-label="Link to linkedin page"
-              data-anijs="if: scroll, on: window, do: slideInRight animated, before: scrollReveal"
             >
               <iconify-icon icon="devicon:linkedin"></iconify-icon>
             </a>
           </div>
-          <div class="w-full flex items-center justify-center mt-4 sm:mt-8">
+          <div class="w-full flex items-center justify-center mt-2 md:mt-4">
             <!-- link to projects -->
             <a
-              href="#projects"
-              class="p-2 sm:p-4 text-xl md:text-2xl font-bold uppercase text-center text-slate-50 bg-slate-900 hover:bg-yellow-400 rounded-lg"
-              aria-label="jump to projects section"
+              href="#contact"
+              class="p-2 sm:px-4 text-xl md:text-2xl font-bold uppercase text-center text-slate-50 bg-slate-900 hover:bg-white hover:text-slate-900 transition-all rounded-xl"
+              aria-label="jump to contact section"
             >
-              projects
+              Let&apos;s connect
             </a>
           </div>
         </article>
@@ -204,7 +210,6 @@
         <div class="w-full mb-4 sm:mb-8 md:mb-10">
           <h2
             class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
-            data-anijs="if: scroll, on: window, do: fadeInUpBig animated, before: scrollReveal"
           >
             about me
           </h2>
@@ -214,11 +219,10 @@
         </div>
         <!-- section details -->
         <section
-          class="w-full md:max-w-5xl mx-auto pt-4 sm:pt-6 md:pt-8 lg:pt-12 grid lg:grid-cols-[60%_40%] gap-4 sm:gap-6 lg:gap-0"
+          class="w-full md:max-w-4xl mx-auto pt-2 md:pt-4 xl:pt-6 grid gap-4 md:gap-6 xl:gap-8"
         >
           <article
             class="w-full grid gap-2 sm:gap-4 md:gap-6 text-center md:text-left sm:text-xl"
-            data-anijs="if: scroll, on: window, do: animate__backInUp animated, before: scrollReveal"
           >
             <h3
               class="w-full text-xl sm:text-2xl md:text-3xl uppercase font-bold"
@@ -227,9 +231,11 @@
             </h3>
             <p>
               I am a self taught software developer with a high capacity for
-              problem solving and analytical thinking. I love building
-              responsive, user-friendly and interactive web interfaces with
-              seamless navigation using modern technologies.
+              problem solving and analytical thinking. Proficient in both
+              frontend and backend technologies including JavaScript, React,
+              Node.js, Python, Flask and also adept at working in agile environments and
+              collaborating with cross-functional teams to deliver high-quality
+              software solutions.
             </p>
             <p>
               I hope to hone my skills, deepen my knowlege and create or
@@ -261,76 +267,63 @@
           <!-- skills section -->
           <section class="w-full self-baseline flex flex-col gap-2 md:gap-4">
             <h3
-              class="w-full text-xl sm:text-2xl md:text-3xl uppercase text-center md:text-left lg:text-right font-bold"
-              data-anijs="if: scroll, on: window, do: fadeInRightBig animated, before: scrollReveal"
+              class="w-full text-xl sm:text-2xl md:text-3xl uppercase text-center font-bold"
             >
               my skills
             </h3>
             <!-- list of skills -->
             <ul
-              class="w-full flex flex-wrap items-center justify-center md:justify-normal lg:justify-end gap-4 sm:gap-8 md:gap-12 py-2 text-3xl sm:text-5xl md:text-7xl uppercase"
+              class="w-full flex flex-wrap items-center justify-center gap-4 md:gap-8 xl:gap-12 py-2"
             >
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
+              <!-- <li class="flex flex-col items-center justify-center gap-1">
                 <iconify-icon icon="vscode-icons:file-type-html"></iconify-icon>
               </li>
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
+              <li class="flex flex-col items-center justify-center gap-1">
                 <iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>
               </li>
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
+              <li class="flex flex-col items-center justify-center gap-1">
                 <iconify-icon icon="devicon:sass"></iconify-icon>
               </li>
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
+              <li class="flex flex-col items-center justify-center gap-1">
                 <iconify-icon icon="devicon:tailwindcss"></iconify-icon>
+              </li> -->
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="logos:javascript" class="text-xl md:text-3xl xl:text-4xl"></iconify-icon>
+                <p class="font-medium">JavaScript</p>
               </li>
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
-                <iconify-icon icon="logos:javascript"></iconify-icon>
-              </li>
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
+              <li class="flex flex-col items-center justify-center gap-1">
                 <iconify-icon
-                  icon="vscode-icons:file-type-typescriptdef-official"
+                  icon="vscode-icons:file-type-typescriptdef-official" class="text-xl md:text-3xl xl:text-4xl"
                 ></iconify-icon>
+                <p class="font-medium">TypeScript</p>
               </li>
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
-                <iconify-icon icon="devicon:react"></iconify-icon>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="devicon:react" class="text-xl md:text-3xl xl:text-4xl"></iconify-icon>
+                <p class="font-medium">React</p>
               </li>
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
-                <iconify-icon icon="teenyicons:nextjs-outline"></iconify-icon>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="teenyicons:nextjs-outline" class="text-xl md:text-3xl xl:text-4xl"></iconify-icon>
+                <p class="font-medium">NextJS</p>
               </li>
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
-                <iconify-icon icon="devicon:git"></iconify-icon>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="teenyicons:python-solid" class="text-xl md:text-3xl xl:text-4xl"></iconify-icon>
+                <p class="font-medium">Python</p>
               </li>
-              <li
-                class="flex flex-col items-center justify-center gap-1"
-                data-anijs="if: scroll, on: window, do: animate__tada animated, before: scrollReveal"
-              >
-                <iconify-icon icon="devicon:github"></iconify-icon>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="tabler:brand-mysql" class="text-xl md:text-3xl xl:text-4xl"></iconify-icon>
+                <p class="font-medium">MySQL</p>
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="carbon:database-redis" class="text-xl md:text-3xl xl:text-4xl"></iconify-icon>
+                <p class="font-medium">Redis</p>
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="devicon:git" class="text-xl md:text-3xl xl:text-4xl"></iconify-icon>
+                <p class="font-medium">Git</p>
+              </li>
+              <li class="flex flex-col items-center justify-center gap-1">
+                <iconify-icon icon="devicon:github" class="text-xl md:text-3xl xl:text-4xl"></iconify-icon>
+                <p class="font-medium">Github</p>
               </li>
             </ul>
           </section>
@@ -342,11 +335,10 @@
         id="projects"
         class="w-full px-4 py-16 sm:px-8 sm:py-20 md:py-24 md:px-12 lg:px-16 lg:py-28 bg-slate-200"
       >
-      <!-- section header -->
+        <!-- section header -->
         <div class="w-full mb-4 sm:mb-8 md:mb-10">
           <h2
             class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
-            data-anijs="if: scroll, on: window, do: fadeInUpBig animated, before: scrollReveal"
           >
             my projects
           </h2>
@@ -357,27 +349,10 @@
         <!-- list of projects -->
         <ul
           id="projects_list"
-          class="w-full grid md:grid-cols-2 gap-4 sm:gap-8 lg:gap-12 p-4 sm:p-6 md:p-8 lg:p-12"
+          class="w-full grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 xl:gap-12 pt-2 md:pt-4 xl:pt-6"
         >
           <li
             class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
-            data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal"
-          ></li>
-          <li
-            class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
-            data-anijs="if: scroll, on: window, do: bounceInRight animated, before: scrollReveal"
-          ></li>
-          <li
-            class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
-            data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal"
-          ></li>
-          <li
-            class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
-            data-anijs="if: scroll, on: window, do: bounceInRight animated, before: scrollReveal"
-          ></li>
-          <li
-            class="projects w-full flex flex-col justify-between p-4 sm:p-6 lg:p-8 rounded-md md:rounded-lg bg-white hover:bg-slate-300 drop-shadow sm:drop-shadow-md lg:drop-shadow-xl"
-            data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal"
           ></li>
         </ul>
       </section>
@@ -386,11 +361,10 @@
         id="contact"
         class="w-full min-h-screen flex flex-col items-center gap-2 px-4 py-16 sm:px-8 sm:py-20 md:py-24 md:px-12 lg:px-16 lg:py-28 bg-slate-100"
       >
-      <!-- section header -->
+        <!-- section header -->
         <div class="w-full mb-4 sm:mb-8 md:mb-10">
           <h2
             class="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-2 text-center uppercase font-bold"
-            data-anijs="if: scroll, on: window, do: fadeInUpBig animated, before: scrollReveal"
           >
             let's connect
           </h2>
@@ -399,70 +373,73 @@
           ></div>
         </div>
         <section
-          class="w-full flex items-center justify-center pt-4 sm:pt-6 md:pt-8 lg:pt-12"
+          class="w-full flex items-center justify-center"
         >
-        <!-- contact form -->
+          <!-- contact form -->
           <form
             id="contact-form"
             name="contact_form"
             novalidate
-            class="w-full max-w-xs md:max-w-3xl flex flex-col gap-2 md:gap-4 p-6 md:p-10 text-xl md:text-2xl bg-white rounded-xl drop-shadow md:drop-shadow-lg"
-            data-anijs="if: scroll, on: window, do: flipInY animated, before: scrollReveal"
+            class="w-full max-w-xs md:max-w-3xl lg:max-w-5xl flex flex-col lg:grid lg:grid-cols-2 gap-2 md:gap-4 lg:gap-8 xl:gap-12 p-6 md:p-10 bg-white rounded-xl drop-shadow md:drop-shadow-lg"
           >
-            <label htmlFor="name" class="w-full grid gap-1">
-              Name
-              <span class="name_error text-xs text-red-500"></span>
-              <input
-                type="text"
-                name="user_name"
-                required
-                type="text"
-                placeholder="e.g John Doe"
-                class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
-              />
-            </label>
-            <label htmlFor="email" class="w-full grid gap-1">
-              Email
-              <span class="email_error text-xs text-red-500"></span>
-              <input
-                type="text"
-                name="user_email"
-                required
-                type="text"
-                placeholder="johndoe@example.com"
-                class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
-              />
-            </label>
-            <label htmlFor="subject" class="w-full grid gap-1">
-              Subject
-              <span class="subject_error text-xs text-red-500"></span>
-              <input
-                type="text"
-                name="subject"
-                required
-                type="text"
-                placeholder="Let's work on a project"
-                class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
-              />
-            </label>
-            <label htmlFor="message" class="w-full grid gap-1">
-              Message
-              <span class="message_error text-xs text-red-500"></span>
-              <textarea
-                name="message"
-                required
-                type="text"
-                placeholder="Please enter you message here..."
-                class="form_input w-full p-2 sm:p-3 lg:p-4 outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
-                rows="7"
-              ></textarea>
-            </label>
-            <button
-              type="submit"
-              class="submit_btn w-auto self-end flex items-center justify-center gap-1 md:gap-2 py-2 px-4 text-white bg-slate-900 hover:bg-slate-500 rounded-lg"
-            >
-              Send Message <iconify-icon icon="tabler:send"></iconify-icon>
-            </button>
+            <div class="w-full flex flex-col gap-2 md:gap-4">
+              <label htmlFor="name" class="w-full grid gap-1 font-medium">
+                Name
+                <span class="name_error text-xs text-red-500"></span>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  type="text"
+                  placeholder="e.g John Doe"
+                  class="form_input w-full p-2 md:p-3 xl:p-4 text-sm font-normal outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+                />
+              </label>
+              <label htmlFor="email" class="w-full grid gap-1 font-medium">
+                Email
+                <span class="email_error text-xs text-red-500"></span>
+                <input
+                  type="text"
+                  name="user_email"
+                  required
+                  type="text"
+                  placeholder="johndoe@example.com"
+                  class="form_input w-full p-2 md:p-3 xl:p-4 text-sm font-normal outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+                />
+              </label>
+              <label htmlFor="subject" class="w-full grid gap-1 font-medium">
+                Subject
+                <span class="subject_error text-xs text-red-500"></span>
+                <input
+                  type="text"
+                  name="subject"
+                  required
+                  type="text"
+                  placeholder="Let's work on a project"
+                  class="form_input w-full p-2 md:p-3 xl:p-4 text-sm font-normal outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+                />
+              </label>
+            </div>
+            <div class="w-full flex flex-col gap-2 md:gap-4">
+              <label htmlFor="message" class="w-full grid gap-1 font-medium">
+                Message
+                <span class="message_error text-xs text-red-500"></span>
+                <textarea
+                  name="message"
+                  required
+                  type="text"
+                  placeholder="Please enter you message here..."
+                  class="form_input w-full p-2 md:p-3 xl:p-4 text-sm font-normal outline-none bg-slate-100 border hover:border-slate-900 focus:border-slate-950 rounded-lg"
+                  rows="10"
+                ></textarea>
+              </label>
+              <button
+                type="submit"
+                class="submit_btn w-auto self-end flex items-center justify-center gap-1 md:gap-2 py-2 px-4 text-white bg-slate-900 border border-slate-900 hover:bg-white hover:text-slate-900 rounded-lg"
+              >
+                Send Message <iconify-icon icon="tabler:send"></iconify-icon>
+              </button>
+            </div>
           </form>
         </section>
       </section>
@@ -471,18 +448,19 @@
     <!-- footer -->
     <footer class="w-full bg-slate-900 text-slate-100 font-bold">
       <p class="w-full text-center capitalize py-4">
-        made with ❤️ by
-        <a href="https://github.com/ubonisrael" target="_blank" aria-label="link to Ubonisrael's github"
+        built with ❤️ by
+        <a
+          href="https://github.com/ubonisrael"
+          target="_blank"
+          aria-label="link to Ubonisrael's github"
+          class="hover:text-blue-400"
           >Ubonisrael Akpanudoh</a
         >
       </p>
     </footer>
-    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
-
     <!-- Include to use $addClass, $toggleClass or $removeClass -->
     <!-- <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script> -->
     <!-- The scrollreveal helper -->
-    <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="./app.js"></script>
     <script

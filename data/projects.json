@@ -1,5 +1,21 @@
 [
     {
+        "name": "WeBlog",
+        "project_image": "weblog.png",
+        "description": "A Modern Blog Platform.",
+        "tech_stack": [
+            "python",
+            "flask",
+            "react",
+            "mysql",
+            "api"
+        ],
+        "links": [
+            "https://github.com/RealTonyBlaq/WeBlog",
+            "https://ubonisrael.pythonanywhere.com"
+        ]
+    },
+    {
         "name": "flexmovies",
         "project_image": "flexmovies.webp",
         "description": "An entertainment web app built with Next.js that allows users to search for movies and tv shows. Users can also sign up and add movies or shows to their lists of favorites or a watchlist.",

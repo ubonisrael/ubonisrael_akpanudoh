@@ -4,7 +4,7 @@ const nav = document.querySelector("#nav");
 const openMenuBtn = document.querySelector("#open_nav");
 const closeMenuBtn = document.querySelector("#close_nav");
 const menuLinks = document.querySelectorAll(".menu_links");
-const projectsList = document.querySelectorAll(".projects");
+const projectsList = document.querySelector("#projects_list");
 const regexp = new RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
 const user_name = document.forms["contact_form"]["user_name"];
 const user_email = document.forms["contact_form"]["user_email"];
@@ -26,11 +26,11 @@ formInputs.forEach((child) => {
 
 const openNav = () => {
   nav.classList.remove("w-0");
-  nav.classList.add("w-screen");
+  nav.classList.add("w-screen", "bg-white");
 };
 
 const closeNav = () => {
-  nav.classList.remove("w-screen");
+  nav.classList.remove("w-screen", "bg-white");
   nav.classList.add("w-0");
 };
 
@@ -41,46 +41,56 @@ menuLinks.forEach((menu_link) => {
   menu_link.addEventListener("click", closeNav);
 });
 
-function loadProjects() {
-  fetch("./data/projects.json")
+async function loadProjects() {
+  const projects = [];
+  await fetch("./data/projects.json")
     .then((res) => res.json())
     .then((res) =>
-      res.map((data, i) => {
-        projectsList[i].innerHTML = `<div class="w-full">
-        <img src="./data/images/${data.project_image}" alt="${
+      res.map((data) => {
+        projects.push(`<li
+            class="project"
+          >
+          <img src="./data/images/${data.project_image}" alt="${
           data.name
         } image" />
-        <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl py-1 sm:py-4 lg:py-6 uppercase font-bold">
+        <div class="project_div">
+        <div class="w-full">
+        <div class="pb-1 md:pb-2 xl:pb-3">
+        <h3 class="text-lg md:text-xl xl:text-2xl uppercase font-bold">
           ${data.name}
         </h3>
-        <p class="my-1 lg:text-xl">${data.description}</p>
-        </div>
-        <div class="w-full mt-4 sm:mt-6 lg:mt-8">
-          <ul class="w-full flex flex-wrap uppercase">
-            ${data.tech_stack
+        <ul class="w-full flex flex-wrap uppercase">
+        ${data.tech_stack
               .map(
                 (stack, i) =>
                   `<li
                 class="${
-                  data.tech_stack[i + 1] ? "border-r-2 border-slate-950" : ""
-                } px-2"
-              >
-                ${stack}
-              </li>`
-              )
-              .join("")}
+                  data.tech_stack[i + 1] ? "pr-2 mr-2 border-r-2 border-slate-950" : ""
+                  } text-xs"
+                  >
+                  ${stack}
+                  </li>`
+                )
+                .join("")}
           </ul>
-          <div class="w-full flex gap-2 my-1 px-2 text-2xl md:text-3xl lg:text-4xl">
-            <a href="${data.links[0]}" target="_blank aria-label="link to github repo">
+        </div>
+          <p class="py-1 md:py-2 text-sm xl:text-base">${data.description}</p>
+        </div>
+          <div class="w-full flex gap-2 mt-2 mb-3 md:text-lg xl:text-xl">
+            <a href="${
+              data.links[0]
+            }" target="_blank aria-label="link to github repo">
             <iconify-icon icon="devicon:github"></iconify-icon>
             </a>
             <a href="${data.links[1]}" target="_blank aria-label="link to demo">
             <iconify-icon icon="ph:link-bold"></iconify-icon>
             </a>
           </div>
-        </div>`;
+          </div>
+          </li>`);
       })
     );
+  projectsList.innerHTML = projects.join("");
 }
 
 function ValidationForm() {

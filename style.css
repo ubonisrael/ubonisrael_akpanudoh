@@ -15,11 +15,22 @@
 
   .scrollbar::-webkit-scrollbar-thumb {
     background: rgb(75 85 99);
-    /* border-radius: 100vh; */
-    /* border: 3px solid #f6f7ed; */
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
     background: rgb(15 23 42);;
   }
+
+}
+
+.project {
+  @apply  w-full flex flex-col rounded-md md:rounded-b-lg bg-white hover:bg-slate-100 drop-shadow sm:drop-shadow-md lg:shadow-xl cursor-pointer hover:scale-105 transition-all
+}
+
+.project img {
+  @apply  h-32 md:h-48 xl:h-60 rounded-t-md
+}
+
+.project_div {
+  @apply  p-2 md:p-3 xl:py-4 flex flex-col justify-between
 }
